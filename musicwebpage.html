@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Music Website</title>
+	<link rel="stylesheet" href="musicstyle.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="h1">
+
+		<h1>RnR</h1>
+		</div>
+
+		<div class="navbar">
+
+			<ul>
+				<li><a href="musicwebpage.html">HOME</a></li>
+				<li><a href="aboutus.html">ABOUT</a></li>
+				<li><a href="aboutus.html">SPECIFICATIONS</a></li>
+				<li><a href="aboutus.html">PRODUCTS</a></li>
+				<li><a href="aboutus.html">CONNECT</a></li>
+			</ul>	
+
+			<div class="left-col">	
+			<h1>FEEL </br> &nbsp  THE </br> &nbsp &nbsp   BEAT</h1>
+		</div>
+
+		</div>
+		<div class="right-col">
+			<p><b>Click Here To Listen</p>
+			<img src="play.png"  id="icon">
+		</div>
+	</div>	
+
+	<audio id="mySong">
+		<source src="zxc.mp3" typre="audio/mp3">
+	</audio>
+
+	<script>
+		var mySong = document.getElementById("mySong");
+		var icon = document.getElementById("icon");
+
+		icon.onclick = function(){
+			if(mySong.paused){
+				mySong.play();
+				icon.src="pause.png";
+			}else{
+				mySong.pause();
+				icon.src="play.png";
+			}
+		}
+
+	</script>	
+
+</body>
+</html>
